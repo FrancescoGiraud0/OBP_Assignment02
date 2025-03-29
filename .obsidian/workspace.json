@@ -1,0 +1,178 @@
+{
+  "main": {
+    "id": "4b7d91d9380b23a1",
+    "type": "split",
+    "children": [
+      {
+        "id": "f4cc8d495c5b43e7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1cbe1edae8d958c8",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c9f3bfcc4d4fd2cf",
+    "type": "split",
+    "children": [
+      {
+        "id": "ce5d9ddaa2f74eb1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8a4dadd0b68cc0d2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "10434004a02efbe6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "6188ac71f85e8268",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "af30e57173d80617",
+    "type": "split",
+    "children": [
+      {
+        "id": "bfafb84a6023ade0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "427ed9c37de0657e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Assignment 2 - Maintenance.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Assignment 2 - Maintenance"
+            }
+          },
+          {
+            "id": "c321362a20fa6cd2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Assignment 2 - Maintenance.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Assignment 2 - Maintenance"
+            }
+          },
+          {
+            "id": "4d59d33b133c1a71",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "d670a9d212df0215",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Assignment 2 - Maintenance.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Assignment 2 - Maintenance"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "1cbe1edae8d958c8",
+  "lastOpenFiles": [
+    "Assigment02_README.md",
+    "Hello app] [Assignment 2 - Maintenance.md",
+    "Assignment 2 - Maintenance.pdf",
+    "pages/pointB.py",
+    "pages/pointA.py",
+    "utils/test2.py",
+    "utils/test1.py",
+    "utils/testing,py"
+  ]
+}
