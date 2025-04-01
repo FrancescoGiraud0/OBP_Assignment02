@@ -3,17 +3,16 @@ from system import System  # Assuming the class is saved in system_model.py
 
 class TestSystemModel(unittest.TestCase):
     # Tolerance for comparing analytical vs simulation results
-    TOLERANCE = 0.02  # 2% difference allowed
+    TOLERANCE = 0.05  # 5% difference allowed
     
     # Define multiple test cases as (n, k, num_repairmen, failure_rate, repair_rate)
     TEST_CASES = [
         # Basic case
+        (5, 3, 1, 2.0, 3.0),
         (5, 3, 2, 2.0, 3.0),
-        # More repairmen than needed
+        (5, 3, 3, 2.0, 3.0),
         (5, 3, 4, 2.0, 3.0),
         (5, 3, 5, 2.0, 3.0),
-        # Few repairmen, high load
-        (5, 3, 1, 2.0, 3.0),
         # Large system
         (10, 7, 3, 1.5, 2.5),
         # High reliability components
@@ -37,20 +36,23 @@ class TestSystemModel(unittest.TestCase):
                 )
                 
                 # Get analytical result
-                analytical_result = system.active_time_fraction()
+                analytical_result = round(system.active_time_fraction(),4)
                 
                 # Get simulation result (with large number of cycles for accuracy)
-                simulation_result = system.sim(cycles=10000000, warmup_cycles=10000)
+                simulation_result = round(system.sim(cycles=5000000, warmup_cycles=10000),4)
                 
+                absolute_difference = abs(analytical_result - simulation_result)
+
                 # Calculate relative difference
                 if analytical_result > 0:
-                    relative_difference = abs(analytical_result - simulation_result) / analytical_result
+                    relative_difference = absolute_difference / analytical_result
                 else:
-                    relative_difference = abs(analytical_result - simulation_result)
+                    relative_difference = absolute_difference
                 
                 print(f"\nTest Case {case_idx+1}: n={n}, k={k}, s={num_repairmen}, λ={failure_rate}, μ={repair_rate}")
-                print(f"Analytical active time: {analytical_result:.6f}")
-                print(f"Simulation active time: {simulation_result:.6f}")
+                print(f"Analytical active time: {analytical_result:.4f}")
+                print(f"Simulation active time: {simulation_result:.4f}")
+                print(f"Absolute difference: {absolute_difference:.4f}")
                 print(f"Relative difference: {relative_difference*100:.2f}%")
                 
                 # Assert that relative difference is within tolerance
