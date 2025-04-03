@@ -439,7 +439,7 @@ class System:
             for r in range(1, max_repairmen + 1):
                 cost, availability = self.total_cost(n, r, component_cost, repairmen_cost, downtime_cost)
 
-                if cost < lowest_cost:
+                if cost <= lowest_cost:
                     lowest_cost = cost
                     opt_result = {
                         "components": n,
