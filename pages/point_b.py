@@ -16,8 +16,8 @@ comp_cost = st.number_input("Component Cost", value=10.0, min_value=0.0)
 repair_cost = st.number_input("Repairman Cost", value=50.0, min_value=0.0)
 downtime_cost = st.number_input("Downtime Cost", value=100.0, min_value=0.0)
 
-max_n = st.slider("Max Number of Components (n)", k, 3*k, value=2*k)
-max_r = st.slider("Max Repairmen", 1, 3*k, value=k)
+max_n = st.number_input("Max Number of Components (n)", value=k, min_value=0.0)
+max_r = st.slider("Max Repairmen", value=k, min_value=0.0)
 
 if st.button("Find Optimal Configuration"):
     sys = System(max_n,k,repairmen,failure_rate,repair_rate,cold_standby)
