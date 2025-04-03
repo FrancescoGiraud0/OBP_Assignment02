@@ -6,7 +6,7 @@
       {
         "id": "f4cc8d495c5b43e7",
         "type": "tabs",
-        "dimension": 58.909287257019436,
+        "dimension": 58.90928725701943,
         "children": [
           {
             "id": "d7b46aaa19e69976",
@@ -27,7 +27,7 @@
       {
         "id": "6aabc67790c5a042",
         "type": "tabs",
-        "dimension": 41.090712742980564,
+        "dimension": 41.09071274298057,
         "children": [
           {
             "id": "1cbe1edae8d958c8",
@@ -192,14 +192,19 @@
   },
   "active": "d7b46aaa19e69976",
   "lastOpenFiles": [
+    "utils/test_results.txt",
+    "utils/test_results.py",
+    "utils/__pycache__/system.cpython-312.pyc",
+    "utils/__pycache__",
+    "utils/test.py",
+    "utils/unittest.py",
     "Note.md",
+    "pages/point_b.py",
+    "pages/point_a.py",
     "Assigment02_README.md",
-    "Hello app] [Assignment 2 - Maintenance.md",
-    "Assignment 2 - Maintenance.pdf",
-    "pages/pointB.py",
-    "pages/pointA.py",
-    "utils/test2.py",
-    "utils/test1.py",
-    "utils/testing,py"
+    "utils/test1_copy.py",
+    "test1_copy.py",
+    "test1.py",
+    "Hello app] [Assignment 2 - Maintenance.md"
   ]
 }

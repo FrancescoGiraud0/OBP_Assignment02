@@ -4,7 +4,6 @@ Exam: Optimization of Business Processes
 Type: Assignment 2
 Note: Project description
 ---
-
 # Assignment 02 OBP
 
 ## Requirements
@@ -39,14 +38,12 @@ b. Find the optimal number of components and repairmen using the following addit
 My idea is creating two python classes (one per exercise) in order to define the system (parameters and related functions). We can create a  [python class](https://www.w3schools.com/python/python_classes.asp) object for defining and solving the system for point a, then we can use [class inheritance](https://www.w3schools.com/python/python_inheritance.asp)  to define and solving the system in point b. After testing these, we can create the respective streamlit pages, we can see the Hello Example App [[Assigment02_README#^d35fe8]]
 
 - pages >
-  - helloworld.py : A simple page to test the streamlit python library capabilities
-    - PointA.py : Code for point a page visualization
-    - PointB.py : Code for point b page visualization
+  - PointA.py : Code for point a page visualization
+  - PointB.py : Code for point b page visualization
 - utils >
   - system.py : Code for definition of the maintenance system (possibly using Object Oriented approach)
-    - utils.py : Other utility functions
-    - test1.py : Code for testing system.py / utils.py for solving point a requirements
-    - test2.py : Code for testing system.py / utils.py for solving point b requirements
+  - test1.py : Code for testing system.py / utils.py for solving point a requirements
+  - test2.py : Code for testing system.py / utils.py for solving point b requirements
 - app.py :  Code for main app to run
 
 ## References
