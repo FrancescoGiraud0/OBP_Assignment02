@@ -2,9 +2,7 @@ import math
 import random as rand
 
 class System:
-    # We can model the system as a Engset Delay Model
-    # M/M/s/n/n where s is the number of machines and n
-    # the number of repairmen
+    
     def __init__(self, n, k, num_repairmen,
                  failure_rate, repair_rate, cold_standby=False):
         self.n = n
@@ -447,8 +445,6 @@ class System:
                         "availability": availability,
                         "total_cost": cost
                     }
-                
-                print(config)
 
                 if cost < lowest_cost:
                     lowest_cost = cost
@@ -474,6 +470,9 @@ if __name__ == "__main__":
 
     print(f"\nActive time fraction (sys.sim(cycles=100000, warmup_cycles=0)): {sys.sim(cycles=1000000, warmup_cycles=10000):.4f}\n")
     
+    # Try Optimization
+    print(f"\nBest configuration: {sys.optimize(10, 5, 20, 20, 50)}")
+
     sys = System(n=5, k=3, num_repairmen=3,
                  failure_rate=2.0, repair_rate=3.0, 
                  cold_standby=False)
@@ -493,4 +492,4 @@ if __name__ == "__main__":
 
 
     # Try Optimization
-    print(f"\nBest configuration: {sys.optimize(10, 5, 10, 20, 50)}")
+    print(f"\nBest configuration: {sys.optimize(10, 5, 20, 20, 50)}")

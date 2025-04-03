@@ -21,12 +21,12 @@ max_r = st.slider("Max Repairmen", 1, 3*k, value=k)
 
 if st.button("Find Optimal Configuration"):
     sys = System(max_n,k,repairmen,failure_rate,repair_rate,cold_standby)
-    result = sys.optimize()
+    result = sys.optimize(max_n, max_r, comp_cost, repair_cost, downtime_cost)
     if result:
         st.subheader("🧠 Optimal Configuration")
         st.write(f"**Components**: {result['components']}")
         st.write(f"**Repairmen**: {result['repairmen']}")
         st.write(f"**Availability**: {result['availability']:.4f}")
-        st.write(f"**Total Cost**: {result['total_cost']:.2f}")
+        st.write(f"**Total Cost (per time unit)**: {result['total_cost']:.2f}")
     else:
         st.error("No configuration found.")
