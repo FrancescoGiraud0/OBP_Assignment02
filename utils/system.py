@@ -409,7 +409,7 @@ class System:
     """
     def total_cost(self, n, r, component_cost, repairmen_cost, downtime_cost):
 
-        sys = System(n, self.k, self.num_repairmen, self.mu, self.lambda_val, self.cold_standby)
+        sys = System(n, self.k, r, self.mu, self.lambda_val, self.cold_standby)
 
         availability = sys.active_time_fraction()
 
