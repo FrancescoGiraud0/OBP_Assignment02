@@ -100,7 +100,7 @@ class System:
         pi[0] = pi_0
         
         # Calculate π(j) for j ≤ s
-        for j in range(1, s + 1):
+        for j in range(1, min(s + 1, n)):
             pi[j] = math.comb(n, j) * (lambda_mu_ratio ** j) * pi_0
         
         # Calculate π(j) for j > s
@@ -439,18 +439,16 @@ class System:
             for r in range(1, max_repairmen + 1):
                 cost, availability = self.total_cost(n, r, component_cost, repairmen_cost, downtime_cost)
 
-                config = {
+                if cost < lowest_cost:
+                    lowest_cost = cost
+                    opt_result = {
                         "components": n,
                         "repairmen": r,
                         "availability": availability,
                         "total_cost": cost
                     }
 
-                if cost < lowest_cost:
-                    lowest_cost = cost
-                    best_config = config.copy()
-
-        return best_config
+        return opt_result
 
 if __name__ == "__main__":
     sys = System(n=5, k=3, num_repairmen=3, 
