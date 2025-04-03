@@ -2,7 +2,7 @@ import math
 import random as rand
 
 class System:
-    
+
     def __init__(self, n, k, num_repairmen,
                  failure_rate, repair_rate, cold_standby=False):
         self.n = n
@@ -437,7 +437,7 @@ class System:
         
         for n in range(self.k, max_n + 1):
             for r in range(1, max_repairmen + 1):
-                cost, availability = sys.total_cost(n, r, component_cost, repairmen_cost, downtime_cost)
+                cost, availability = self.total_cost(n, r, component_cost, repairmen_cost, downtime_cost)
 
                 config = {
                         "components": n,
