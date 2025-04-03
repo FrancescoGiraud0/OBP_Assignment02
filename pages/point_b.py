@@ -20,7 +20,7 @@ max_n = st.slider("Max Number of Components (n)", k, 3*k, value=2*k)
 max_r = st.slider("Max Repairmen", 1, 3*k, value=k)
 
 if st.button("Find Optimal Configuration"):
-    sys = System(max_n,k,repairmen,failure_rate, repair_rate, cold_standby)
+    sys = System(max_n,k,repairmen,failure_rate,repair_rate,cold_standby)
     result = sys.optimize()
     if result:
         st.subheader("🧠 Optimal Configuration")

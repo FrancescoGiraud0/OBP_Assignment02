@@ -4,6 +4,10 @@ Exam: Optimization of Business Processes
 Type: Assignment 2
 Note: Project description
 ---
+
+> [!NOTE] Open this with Obsidian for better viewing.
+> 
+
 # Assignment 02 OBP
 
 ## Requirements
@@ -35,19 +39,16 @@ b. Find the optimal number of components and repairmen using the following addit
 
 ## Project structure
 
-My idea is creating two python classes (one per exercise) in order to define the system (parameters and related functions). We can create a  [python class](https://www.w3schools.com/python/python_classes.asp) object for defining and solving the system for point a, then we can use [class inheritance](https://www.w3schools.com/python/python_inheritance.asp)  to define and solving the system in point b. After testing these, we can create the respective streamlit pages, we can see the Hello Example App [[Assigment02_README#^d35fe8]]
-
 - pages >
-  - PointA.py : Code for point a page visualization
-  - PointB.py : Code for point b page visualization
+  - point_a.py : Code for point a page visualization
+  - point_b.py : Code for point b page visualization
 - utils >
-  - system.py : Code for definition of the maintenance system (possibly using Object Oriented approach)
-  - test1.py : Code for testing system.py / utils.py for solving point a requirements
-  - test2.py : Code for testing system.py / utils.py for solving point b requirements
+  - system.py : Code for definition of the maintenance system class
+  - test1.py : Code for testing system.py,  only for point a requirements
 - app.py :  Code for main app to run
 
 ## References
 
 Streamlit API reference -> <https://docs.streamlit.io/>
 
-Streamlit example app Github repository (try it > streamlit hello) -> <https://github.com/streamlit/hello/tree/main> ^d35fe8
+Streamlit example app Github repository (for trying it > streamlit hello) -> <https://github.com/streamlit/hello/tree/main> ^d35fe8
